@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function () {
     const products = [
-        { name: "Klassisk tårta", category: "tårtor", price: 600, img: "media/tarta1.webp", description: "En klassisk tårta med 2 valfria smaker." },
-        { name: "Chokladtårta", category: "tårtor", price: 600, img: "media/chokladtarta.webp", description: "Ljuvlig chokladtårta med rik chokladsmak." },
-        { name: "Jordgubbstårta", category: "tårtor", price: 600, img: "media/jordgubbstarta.webp", description: "Somrig jordgubbstårta med fluffig grädde." },
-        { name: "Bröllopstårta 2 våningar", category: "tårtor", price: 1300, img: "media/weddingcake1.webp", description: "Bröllopstårta på sockerkaksbotten. Max 3 smaker ingår." },
-        { name: "Bröllopstårta 3 våningar", category: "tårtor", price: 1800, img: "media/weddingcake2.webp", description: "Bröllopstårta på sockerkaksbotten. Max 4 smaker ingår." },
-        { name: "Bröllopstårta 4 våningar", category: "tårtor", price: 2300, img: "media/weddingcake3.webp", description: "Bröllopstårta på sockerkaksbotten. Max 5 smaker ingår." },
-        { name: "Drömmar", category: "kakor", price: 70, img: "media/dreams.webp", description: "Vaniljdrömmar som smälter i munnen. Säljs i förpackning om 10 st." },
-        { name: "Snittar", category: "kakor", price: 60, img: "media/snittar.webp", description: "Snittar. Går att få i flera olika smaker. Säljs i förpackning om 10st." },
-        { name: "Chocolate Chip Cookies", category: "kakor", price: 15, img: "media/cookies.webp", description: "Mjuka chocolate chip cookies. Säljes styckvis." },
-        { name: "Limpa", category: "bröd", price: 50, img: "media/limpor.webp", description: "Hantverksbakat smakrikt bröd." },
-        { name: "Frallor", category: "bröd", price: 80, img: "media/frallor.webp", description: "Mjuka frallor perfekta till frukost. Säljes i förpackning om 10 st" },
-        { name: "Vetekakor", category: "bröd", price: 80, img: "media/vetekakor.webp", description: "Mjuka vetekakor säljes i förpackning om 10 st." }
+        { name: "Klassisk tårta", category: "tårtor", price: 600, img: "Media/tarta1.webp", description: "En klassisk tårta med 2 valfria smaker." },
+        { name: "Chokladtårta", category: "tårtor", price: 600, img: "Media/chokladtarta.webp", description: "Ljuvlig chokladtårta med rik chokladsmak." },
+        { name: "Jordgubbstårta", category: "tårtor", price: 600, img: "Media/jordgubbstarta.webp", description: "Somrig jordgubbstårta med fluffig grädde." },
+        { name: "Bröllopstårta 2 våningar", category: "tårtor", price: 1300, img: "Media/weddingcake1.webp", description: "Bröllopstårta på sockerkaksbotten. Max 3 smaker ingår." },
+        { name: "Bröllopstårta 3 våningar", category: "tårtor", price: 1800, img: "Media/weddingcake2.webp", description: "Bröllopstårta på sockerkaksbotten. Max 4 smaker ingår." },
+        { name: "Bröllopstårta 4 våningar", category: "tårtor", price: 2300, img: "Media/weddingcake3.webp", description: "Bröllopstårta på sockerkaksbotten. Max 5 smaker ingår." },
+        { name: "Drömmar", category: "kakor", price: 70, img: "Media/dreams.webp", description: "Vaniljdrömmar som smälter i munnen. Säljs i förpackning om 10 st." },
+        { name: "Snittar", category: "kakor", price: 60, img: "Media/snittar.webp", description: "Snittar. Går att få i flera olika smaker. Säljs i förpackning om 10st." },
+        { name: "Chocolate Chip Cookies", category: "kakor", price: 15, img: "Media/cookies.webp", description: "Mjuka chocolate chip cookies. Säljes styckvis." },
+        { name: "Limpa", category: "bröd", price: 50, img: "Media/limpor.webp", description: "Hantverksbakat smakrikt bröd." },
+        { name: "Frallor", category: "bröd", price: 80, img: "Media/frallor.webp", description: "Mjuka frallor perfekta till frukost. Säljes i förpackning om 10 st" },
+        { name: "Vetekakor", category: "bröd", price: 80, img: "Media/vetekakor.webp", description: "Mjuka vetekakor säljes i förpackning om 10 st." }
     ];
 
     const productList = document.getElementById("product-list");
