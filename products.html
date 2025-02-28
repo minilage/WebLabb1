@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Produkter - Kattas Hembakat</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans&display=swap" rel="stylesheet">
+  
+  <!-- Anpassad CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Logotyp -->
+  <div class="logo-container">
+    <a href="index.html">
+        <img src="media/logo.webp" alt="Kattas Hembakat Logga" class="logo">
+    </a>
+  </div>
+
+  <!-- Navbar med varukorg -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Meny">
+        <span class="navbar-toggler-icon"></span>
+      </button>       
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Hem</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Om Oss</a></li>
+          <li class="nav-item"><a class="nav-link active" href="products.html">Produkter</a></li>
+        </ul>
+
+        <!-- Varukorgsikon i navbaren -->
+        <button class="btn btn-cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartSidebar" aria-controls="cartSidebar">
+          🛒 Varor i kundkorgen: <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="product-intro">
+    <h1>Våra bakverk</h1>
+    <p>Alla våra bakverk skapas med kärlek och omsorg. Våra tårtor finns i olika storlekar, perfekt för både små och stora firanden.
+    Envåningstårta går att få till 10-12 personer eller 13-15 personer. De går att få i flera olika smaker och med täcke av smörkräm, grädde, 
+    marsipan eller sugarpaste.</p>
+
+    <p>Våra vanligaste smaksättningar består av olika typer av mousse eller fluff. Men vi kan även erbjuda andra smaker om så önskas.
+       Exempelvis banan, vanilj, choklad, lemoncurd, maräng eller creme cheese. Samt jordgubbar och hallon under säsongsperioden.</p>
+    <p>Några exempel på mousse är: Blåbärsmousse, Hallonmousse, Passionsfruktmousse, Mangomousse, Apelsinmousse, Jordgubbsmousse, 
+        Bananmousse, Päronmousse, Vaniljkräm, Chokladmousse, Vit chokladmousse, Mocka, Citronmousse och Rabarbermousse.</p> 
+    <p>Några exempel på fluff kan vara: Dumle, Polly, Daim, Ahlgrens bilar, gelehallon, Zoo eller Werther's Original.</p>
+    <p>Hör av dig till oss om du har några speciella önskemål!</p>
+  </section>
+
+  <!-- Produkter -->
+  <section class="product-section">
+    <div class="container mt-4">
+        <h2 class="text-center">Våra produkter</h2>
+        <div id="product-list" class="row"></div>
+    </div>
+  </section>
+
+  <!-- Modal för produktdetaljer -->
+  <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title" id="productModalLabel"></h4>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Stäng"></button>
+        </div>
+        <div class="modal-body">
+          <img id="modalImage" src="" class="img-fluid mb-3" alt="Produktbild">
+          <p id="modalDescription"></p>
+          <p><strong>Pris:</strong> <span id="modalPrice"></span> kr</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Stäng</button>
+          <button type="button" class="btn btn-primary" id="addToCart">Lägg i varukorg</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Offcanvas-varukorg -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar" aria-labelledby="cartSidebarLabel">
+      <div class="offcanvas-header">
+          <h5 id="cartSidebarLabel">Varukorg</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Stäng"></button>
+      </div>
+      <div class="offcanvas-body">
+          <ul id="cart-items" class="list-group mb-3"></ul>
+          <p><strong>Totalt:</strong> <span id="cart-total">0</span> kr</p>
+          <button class="btn btn-success w-100">Gå till kassan</button>
+      </div>
+  </div>
+
+  <!-- Bootstrap & JavaScript -->
+  <script src="js/products.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

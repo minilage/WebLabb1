@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kattas Hembakat - Välkommen</title>
+  
+  <!-- Preconnect för snabbare laddning -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <!-- Bootstrap CSS (Asynkron laddning) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" media="print" onload="this.onload=null;this.removeAttribute('media');">
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"></noscript>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Anpassad CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="index-page">
+
+  <!-- Logotyp uppe till vänster -->
+  <div class="logo-container">
+    <img src="media/logo.webp" alt="Kattas Hembakat Logga" class="logo" width="120" height="120" loading="lazy">
+  </div>
+
+  <!-- Navbar med varukorg -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Meny">
+        <span class="navbar-toggler-icon"></span>
+      </button>       
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Hem</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">Om Oss</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Produkter</a></li>
+        </ul>
+
+        <!-- Varukorgsikon i navbaren -->
+        <button class="btn btn-cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartSidebar" aria-controls="cartSidebar">
+          🛒 Varor i kundkorgen: <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero-sektion -->
+  <header class="hero">
+    <img src="media/display.webp" alt="Bakverk från Kattas Hembakat" class="hero-image" width="400" height="300">
+    <div class="hero-text">
+        <h1 class="display-4">Välkommen till Kattas Hembakat</h1>
+        <p>
+            Hos Kattas Hembakat skapar vi smakupplevelser med kärlek! Här hittar du allt från saftiga tårtor och ljuvliga kakor till nybakat bröd och glutenfria alternativ – allt bakat med omsorg och de bästa råvarorna.
+            <br><br>
+            Beställ dina favoriter i god tid och låt oss göra din fikastund eller fest ännu godare.
+            <br><br>
+             Bakat i Åmål – för dig som älskar hembakat!
+            <br><br>
+            OBS! Endast bokade beställningar. Ingen försäljning på plats.
+        </p>
+    </div>
+  </header>
+
+  <!-- Offcanvas-varukorg -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar" aria-labelledby="cartSidebarLabel">
+    <div class="offcanvas-header">
+        <h5 id="cartSidebarLabel">Varukorg</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Stäng"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul id="cart-items" class="list-group mb-3"></ul>
+        <p><strong>Totalt:</strong> <span id="cart-total">0</span> kr</p>
+        <button class="btn btn-success w-100">Gå till kassan</button>
+    </div>
+  </div>
+
+  <!-- Bootstrap & JavaScript -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+  <script src="js/cart.js" defer></script>
+</body>
+</html>

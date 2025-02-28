@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Om oss - Kattas Hembakat</title>
+  
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans&display=swap" rel="stylesheet">
+  
+  <!-- Anpassad CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Logotyp -->
+  <div class="logo-container">
+    <a href="index.html">
+        <img src="media/logo.webp" alt="Kattas Hembakat Logga" class="logo">
+    </a>
+  </div>
+
+  <!-- Navbar med varukorg -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Meny">
+        <span class="navbar-toggler-icon"></span>
+      </button>       
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Hem</a></li>
+          <li class="nav-item"><a class="nav-link active" href="about.html">Om Oss</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Produkter</a></li>
+        </ul>
+
+        <!-- Varukorgsikon i navbaren -->
+        <button class="btn btn-cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartSidebar" aria-controls="cartSidebar">
+          🛒 Varor i kundkorgen: <span id="cart-count">0</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Om oss sektionen -->
+  <section class="about-section">
+    <h1>Om Kattas Hembakat</h1>
+    <div class="about-content">
+        <div class="about-text">
+            <p>
+                Hej! <br>
+                Jag heter Katarina Alden och driver Kattas Hembakat i Åmål. Med en passion för bakning och många års erfarenhet som kock, älskar jag att skapa både vackra och välsmakande bakverk.  
+                Jag är också mamma till fem fantastiska barn och vet hur viktigt det är med riktigt goda och trygga råvaror i allt jag bakar.
+            </p>
+            <p>
+                Hos mig kan du beställa tårtor, kakor och bröd – även glutenfria alternativ. Varje beställning bakas med största omsorg och kärlek!
+            </p>
+        </div>
+        <div class="about-image">
+            <img src="media/katta.webp" alt="Katarina Alden" class="rounded-image" width="300" height="400" fetchpriority="high">
+
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h2>Kontakt & Beställning</h2>
+        <p>📍 <strong>Adress:</strong> Stora Berga 110, Åmål, Sverige</p>
+        <p>📧 <strong>E-post:</strong> info@kattashembakat.se</p>
+        <p>📞 <strong>Telefon:</strong> 073-679 28 87</p>
+    </div>
+
+    <div class="important-info">
+        <h3>Viktigt att veta:</h3>
+        <ul>
+            <li>Ingen försäljning på plats, endast beställningar.</li>
+            <li>Alla beställningar måste göras i god tid.</li>
+            <li>En beställning är inte giltig förrän den har bekräftats.</li>
+            <li>Priser är en riktlinje då innehåll och tid för utsmyckning kan påverka slutpriset.</li>
+        </ul>
+    </div>
+</section>
+
+<!-- Offcanvas-varukorg -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="cartSidebar" aria-labelledby="cartSidebarLabel">
+    <div class="offcanvas-header">
+        <h5 id="cartSidebarLabel">Varukorg</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Stäng"></button>
+    </div>
+    <div class="offcanvas-body">
+        <ul id="cart-items" class="list-group mb-3"></ul>
+        <p><strong>Totalt:</strong> <span id="cart-total">0</span> kr</p>
+        <button class="btn btn-success w-100">Gå till kassan</button>
+    </div>
+</div>
+
+<!-- Sektion för karta & väder -->
+<section class="info-section">
+  <div class="weather-container">
+    <h2 id="weather-title">Vädret i Åmål</h2>
+    <p id="weather" aria-labelledby="weather-title">Hämtar väderdata...</p>
+  </div>
+  
+  <div class="map-container">
+    <h2 id="map-title">Hitta hit</h2>
+    <div id="map" aria-labelledby="map-title" aria-label="Karta över Kattas Hembakat"></div>
+  </div>
+</section>
+
+<!-- Bootstrap & Google Maps Script -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAJkf--vL6rm5j7ZN5VRPIud6WV659txbc&callback=initMap&libraries=maps,marker" async defer></script>
+<script src="js/maps.js" defer></script>
+<script src="js/weather.js" defer></script>
+<script src="js/cart.js" defer></script>
+
+</body>
+</html>
