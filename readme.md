@@ -4,7 +4,7 @@
 Här kan kunder läsa om bakverk, se kontaktuppgifter och beställa tårtor, kakor och bröd.  
 
 🔗 **Live-version:**  
-[https://minilage.github.io/Web-Labb1/](https://minilage.github.io/Web-Labb1/)
+[https://minilage.github.io/WebLabb1/](https://minilage.github.io/WebLabb1/)
 
 ---
 
@@ -26,7 +26,7 @@ Här kan kunder läsa om bakverk, se kontaktuppgifter och beställa tårtor, kak
 
 ### 1️⃣ Klona repo  
 ```sh
-git clone https://github.com/minilage/kattas-hembakat.git
+git clone https://github.com/minilage/WebLabb1.git
 
 2️⃣ Öppna mappen
 cd kattas-hembakat
@@ -37,11 +37,11 @@ Alternativt kan du öppna filerna direkt i webbläsaren.
 
 🚀 Publicering på GitHub Pages
 1️⃣ Aktivera GitHub Pages:
-1. Gå till Ditt GitHub-repo: https://github.com/minilage/Web-Labb1
+1. Gå till Ditt GitHub-repo: https://github.com/minilage/WebLabb1
 2. Klicka på Settings → Pages
 3. Under Branch, välj main och tryck på Save
 4. Din sida blir tillgänglig på:
-👉 https://minilage.github.io/Web-Labb1/
+👉 https://minilage.github.io/WebLabb1/
 
 2️⃣ Uppdatera sidan vid ändringar:
 När du gör ändringar, kör:
