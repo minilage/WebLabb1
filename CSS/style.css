@@ -195,7 +195,6 @@ p {
     .about-content {
         flex-direction: column;
         text-align: center;
-        max-width: 90%;
     }
 
     .about-text {
@@ -203,9 +202,24 @@ p {
         text-align: center;
     }
 
+    .important-info {
+        width: 90%;
+        max-width: 500px;
+        margin: 20px auto;
+        text-align: left;
+    }
+
     .about-image img.rounded-image {
         width: 200px;
         margin-left: 0;
+    }
+
+    .info-section {
+        flex-direction: column;
+    }
+
+    .cart-container {
+        width: 90%;
     }
 }
 
